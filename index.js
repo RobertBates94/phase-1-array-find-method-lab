@@ -5,7 +5,7 @@ const record = [
 ]
 
 function superBowlWin(record){
-    const result = record.find(result)
+    let result = record.find(result)
 
     if(result === "W"){
         return record.year
