@@ -1,13 +1,10 @@
-const record = [
-    {year: "2018", result: "L"},
-    {year: "2017", result: "W"},
-    {year: "2016", result: "N/A"}
-]
-
-function superBowlWin(record){
-    let result = record.find(result)
-
-    if(result === "W"){
-        return record.year
+function criteria(object){
+    return object.result === "W"
+}
+function superbowlWin(records){
+    const result = records.find(criteria);
+    if (result){
+        return result.year;
     }
 }
+console.log(superbowlWin(records));
